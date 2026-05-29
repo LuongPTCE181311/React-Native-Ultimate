@@ -5,7 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View>
-        <Text>Hoidanit</Text>
+        <Text style={{fontSize : }}>Hoidanit</Text>
       </View>
       <Text>Hello world with Pham Thanh Lương</Text>
     </View>
@@ -18,7 +18,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    fontSize : 40, 
-    color: "red"
   },
 });
