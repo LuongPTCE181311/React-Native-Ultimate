@@ -5,30 +5,23 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View>
-        <Text style={styles.text} >Hoidanit</Text>
+        <Text>Hoidanit</Text>
       </View>
-      <Text style={styles.text2}>Hello world with 
-        <Text style={styles.greenColor}> Phạm Thanh Lượng</Text>
-      </Text>
+      <Text>Hello world with Pham Thanh Lương</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  greenColor: {
-    color: "green"
-  },
   text: {
-    fontSize: 40,
-    color: "red"
-  },
-  text2: {
-    fontSize: 20
+    fontSize: 
   },
   container: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    fontSize : 40, 
+    color: "red"
   },
 });

@@ -8,7 +8,7 @@ export default function App() {
         <Text style={styles.text} >Hoidanit</Text>
       </View>
       <Text style={styles.text2}>Hello world with 
-        <Text style={styles.greenColor}> Phạm Thanh Lượng</Text>
+        <Text > Phạm Thanh Lượng</Text>
       </Text>
     </View>
   );

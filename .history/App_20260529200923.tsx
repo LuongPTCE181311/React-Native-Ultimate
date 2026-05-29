@@ -7,23 +7,18 @@ export default function App() {
       <View>
         <Text style={styles.text} >Hoidanit</Text>
       </View>
-      <Text style={styles.text2}>Hello world with 
-        <Text style={styles.greenColor}> Phạm Thanh Lượng</Text>
-      </Text>
+      <Text>Hello world with Pham Thanh Lương</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   greenColor: {
-    color: "green"
-  },
+    
+  }
   text: {
     fontSize: 40,
     color: "red"
-  },
-  text2: {
-    fontSize: 20
   },
   container: {
     flex: 1,
