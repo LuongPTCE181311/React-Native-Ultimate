@@ -20,7 +20,7 @@ export default function App() {
       <View>
         <Text style={styles.text} >{name}</Text>
         <Text style={styles.text} >{age}</Text>
-        <Text style={styles.text} >{JSON.stringify(person)}</Text>
+        <Text style={styles.text} >{}</Text>
       </View>
       <Text style={styles.text2}>Hello world with 
         <Text style={styles.greenColor}> Phạm Thanh Lượng</Text>
