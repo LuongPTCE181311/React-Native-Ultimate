@@ -1,12 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
-
+import { StyleSheet, Text, TextInput, View } from 'react-native';
 
 
 export default function App() {
 
-  const [name, setName] = useState<string>("");
+  const [name, setName] = useState<string>("Pham Thanh Luong");
+
+  const [age, setAge] = useState<number>(30);
 
   const [person, setPerson] = useState<{
     name: string;
@@ -18,15 +19,11 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View>
-        <TextInput 
-         keyboardType='ascii-capable'
-         multiline={true}
-         onChangeText={value => setName(value)}
-         value={name}
-         style={styles.borderInput}/>
-        <Text style={styles.text} >{name}</Text>s
+        <Text style={styles.text} >{name}</Text>
+        <Text style={styles.text} >{age}</Text>
+        {/* <Text style={styles.text} >{JSON.stringify(person)}</Text> */}
+        <TextInput key style={styles.borderInput}/>
       </View>
-      <Button title='Add new'/>
       <Text style={styles.text2}>Hello world with 
         <Text style={styles.greenColor}> Phạm Thanh Lượng</Text>
       </Text>
@@ -51,7 +48,6 @@ const styles = StyleSheet.create({
     // alignItems: 'center',
     // justifyContent: 'center'
     padding: 20,
-    paddingTop: 40,
   },
   borderInput: {
     borderColor: "violet",

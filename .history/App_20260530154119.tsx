@@ -1,7 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
-
+import { StyleSheet, Text, TextInput, View } from 'react-native';
 
 
 export default function App() {
@@ -22,11 +21,9 @@ export default function App() {
          keyboardType='ascii-capable'
          multiline={true}
          onChangeText={value => setName(value)}
-         value={name}
          style={styles.borderInput}/>
         <Text style={styles.text} >{name}</Text>s
       </View>
-      <Button title='Add new'/>
       <Text style={styles.text2}>Hello world with 
         <Text style={styles.greenColor}> Phạm Thanh Lượng</Text>
       </Text>
@@ -51,7 +48,7 @@ const styles = StyleSheet.create({
     // alignItems: 'center',
     // justifyContent: 'center'
     padding: 20,
-    paddingTop: 40,
+    paddingTop: 1000
   },
   borderInput: {
     borderColor: "violet",

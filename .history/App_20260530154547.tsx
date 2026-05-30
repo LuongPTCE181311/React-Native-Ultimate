@@ -26,7 +26,7 @@ export default function App() {
          style={styles.borderInput}/>
         <Text style={styles.text} >{name}</Text>s
       </View>
-      <Button title='Add new'/>
+      <Button title=''/>
       <Text style={styles.text2}>Hello world with 
         <Text style={styles.greenColor}> Phạm Thanh Lượng</Text>
       </Text>

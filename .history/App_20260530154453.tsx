@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
-
+import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { Button } from 'react-native/types_generated/index';
 
 
 export default function App() {
@@ -26,7 +26,7 @@ export default function App() {
          style={styles.borderInput}/>
         <Text style={styles.text} >{name}</Text>s
       </View>
-      <Button title='Add new'/>
+      <Button
       <Text style={styles.text2}>Hello world with 
         <Text style={styles.greenColor}> Phạm Thanh Lượng</Text>
       </Text>
