@@ -16,11 +16,11 @@ export default function App() {
     {id: 5, title: "learn ExpressJS"},
     {id: 6, title: "learn C++"},
     {id: 7, title: "learn Java script"},
-    {id: 8, title: "learn Java script"},
-    {id: 9, title: "learn Java script"},
-    {id: 10, title: "learn Java script"},
-    {id: 11, title: "learn Java script"},
-    {id: 12, title: "learn Java script"},
+    {id: 7, title: "learn Java script"},
+    {id: 7, title: "learn Java script"},
+    {id: 7, title: "learn Java script"},
+    {id: 7, title: "learn Java script"},
+    {id: 7, title: "learn Java script"},
   ]);
   
   return (

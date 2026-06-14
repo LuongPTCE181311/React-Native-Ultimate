@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { use, useState } from 'react';
-import { Button, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
 
 
 
@@ -16,11 +16,6 @@ export default function App() {
     {id: 5, title: "learn ExpressJS"},
     {id: 6, title: "learn C++"},
     {id: 7, title: "learn Java script"},
-    {id: 8, title: "learn Java script"},
-    {id: 9, title: "learn Java script"},
-    {id: 10, title: "learn Java script"},
-    {id: 11, title: "learn Java script"},
-    {id: 12, title: "learn Java script"},
   ]);
   
   return (
@@ -37,21 +32,17 @@ export default function App() {
 
       <Button title='Add new' color={"green"} onPress={() => alert("tap me")}/>
 
-      <ScrollView style={{
+      <View style={{
         marginTop: 20,
         borderColor: "red",
         borderWidth: 1,
         }}>
         {todoList.map(todo => {
           return (
-            <Text key={todo.id} 
-            style={styles.todo}
-            >
-              {todo.title}
-            </Text>
+            <Text key={} style={styles.todo}>{todo.title}</Text>
           )
         })}
-      </ScrollView>
+      </View>
     </View>
   );
 }

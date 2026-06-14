@@ -20,7 +20,7 @@ export default function App() {
     {id: 9, title: "learn Java script"},
     {id: 10, title: "learn Java script"},
     {id: 11, title: "learn Java script"},
-    {id: 12, title: "learn Java script"},
+    {id: 7, title: "learn Java script"},
   ]);
   
   return (
