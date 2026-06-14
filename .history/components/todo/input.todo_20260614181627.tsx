@@ -20,7 +20,7 @@ const InputTodo = (props: IProps) => {
     const [name, setName] = useState<string>("");
 
     const handleAddNewTodo = () => {
-        addTodo(name);
+        addTodo();
     }
     return (
         <>

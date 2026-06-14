@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
 })
 
 interface IProps {
-    addTodo: (v: string) => void;
+    addTodo: () => void;
 }
 
 const InputTodo = (props: IProps) => {
@@ -20,7 +20,7 @@ const InputTodo = (props: IProps) => {
     const [name, setName] = useState<string>("");
 
     const handleAddNewTodo = () => {
-        addTodo(name);
+        add
     }
     return (
         <>

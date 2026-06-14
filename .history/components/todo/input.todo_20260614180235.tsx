@@ -11,17 +11,11 @@ const styles = StyleSheet.create({
     }
 })
 
-interface IProps {
-    addTodo: (v: string) => void;
-}
+const handleAddNewTodo = ()
 
-const InputTodo = (props: IProps) => {
-    const {addTodo} = props;
+const InputTodo = () => {
+
     const [name, setName] = useState<string>("");
-
-    const handleAddNewTodo = () => {
-        addTodo(name);
-    }
     return (
         <>
             <View>
@@ -34,10 +28,7 @@ const InputTodo = (props: IProps) => {
                 value={name}
                 style={styles.todoInput}/>
 
-            <Button title='Add new'
-              color={"green"}
-              onPress={handleAddNewTodo}
-              />
+            <Button title='Add new' color={"green"} onPress={() => alert("tap me")}/>
             </View>
         </>
     )

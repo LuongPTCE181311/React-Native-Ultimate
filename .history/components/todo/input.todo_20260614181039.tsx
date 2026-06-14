@@ -12,15 +12,15 @@ const styles = StyleSheet.create({
 })
 
 interface IProps {
-    addTodo: (v: string) => void;
+    adTodo
 }
 
 const InputTodo = (props: IProps) => {
-    const {addTodo} = props;
+
     const [name, setName] = useState<string>("");
 
     const handleAddNewTodo = () => {
-        addTodo(name);
+        alert(name);
     }
     return (
         <>

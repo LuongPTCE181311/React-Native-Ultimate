@@ -16,7 +16,7 @@ export default function App() {
   }
 
   const addTodo = (title: string) => {
-    const todo = {id: randomInteger(1, 100000000), title: title}
+    const todo = {id: 1, title: title}
     setTodoList([...todoList, todo])
   }
 

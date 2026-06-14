@@ -11,13 +11,8 @@ export default function App() {
 
   const [todoList, setTodoList] = useState<ITodo[]>([]);
   
-  function randomInteger(min: number, max: number){
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-
-  const addTodo = (title: string) => {
-    const todo = {id: randomInteger(1, 100000000), title: title}
-    setTodoList([...todoList, todo])
+  const addTodo = (title) => {
+    alert("add todo");
   }
 
   return (
