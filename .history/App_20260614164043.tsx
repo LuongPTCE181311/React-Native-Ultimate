@@ -17,7 +17,7 @@ export default function App() {
     {id: 6, title: "learn C++"},
     {id: 7, title: "learn Java script"},
   ]);
-  
+  ?
   return (
     <View style={styles.container}>
       <View>
@@ -30,19 +30,11 @@ export default function App() {
         <Text style={styles.text} >{name}</Text>
       </View>
 
-      <Button title='Add new' color={"green"} onPress={() => alert("tap me")}/>
+      <Button title='Add new' onPress={() => alert("tap me")}/>
 
-      <View style={{
-        marginTop: 20,
-        borderColor: "red",
-        borderWidth: 1,
-        }}>
-        {todoList.map(todo => {
-          return (
-            <Text style={styles.todo}>{todo.title}</Text>
-          )
-        })}
-      </View>
+      <Text style={styles.text2}>Hello world with 
+        <Text style={styles.greenColor}> Phạm Thanh Lượng</Text>
+      </Text>
     </View>
   );
 }
@@ -70,11 +62,5 @@ const styles = StyleSheet.create({
     borderColor: "violet",
     borderWidth: 1,
     padding: 10
-  },
-  todo: {
-    fontSize: 30,
-    backgroundColor: "pink",
-    marginBottom: 20,
-    padding: 15
   }
 });

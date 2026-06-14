@@ -30,16 +30,12 @@ export default function App() {
         <Text style={styles.text} >{name}</Text>
       </View>
 
-      <Button title='Add new' color={"green"} onPress={() => alert("tap me")}/>
+      <Button title='Add new' onPress={() => alert("tap me")}/>
 
-      <View style={{
-        marginTop: 20,
-        borderColor: "red",
-        borderWidth: 1,
-        }}>
+      <View>
         {todoList.map(todo => {
           return (
-            <Text style={styles.todo}>{todo.title}</Text>
+            <Text>{todo.title}</Text>
           )
         })}
       </View>
@@ -72,9 +68,6 @@ const styles = StyleSheet.create({
     padding: 10
   },
   todo: {
-    fontSize: 30,
-    backgroundColor: "pink",
-    marginBottom: 20,
-    padding: 15
+    fontSize
   }
 });

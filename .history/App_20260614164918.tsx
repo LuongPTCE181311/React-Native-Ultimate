@@ -33,9 +33,8 @@ export default function App() {
       <Button title='Add new' color={"green"} onPress={() => alert("tap me")}/>
 
       <View style={{
-        marginTop: 20,
-        borderColor: "red",
-        borderWidth: 1,
+        marginTop: 20
+        bo
         }}>
         {todoList.map(todo => {
           return (

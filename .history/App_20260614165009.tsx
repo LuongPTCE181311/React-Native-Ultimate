@@ -35,7 +35,8 @@ export default function App() {
       <View style={{
         marginTop: 20,
         borderColor: "red",
-        borderWidth: 1,
+        {id: 2, title: "learn React.js"},
+
         }}>
         {todoList.map(todo => {
           return (

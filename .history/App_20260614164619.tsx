@@ -30,13 +30,9 @@ export default function App() {
         <Text style={styles.text} >{name}</Text>
       </View>
 
-      <Button title='Add new' color={"green"} onPress={() => alert("tap me")}/>
+      <Button title='Add new' onPress={() => alert("tap me")}/>
 
-      <View style={{
-        marginTop: 20,
-        borderColor: "red",
-        borderWidth: 1,
-        }}>
+      <View>
         {todoList.map(todo => {
           return (
             <Text style={styles.todo}>{todo.title}</Text>

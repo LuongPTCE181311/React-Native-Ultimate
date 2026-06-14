@@ -35,7 +35,7 @@ export default function App() {
       <View style={{
         marginTop: 20,
         borderColor: "red",
-        borderWidth: 1,
+
         }}>
         {todoList.map(todo => {
           return (
