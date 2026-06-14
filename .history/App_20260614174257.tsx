@@ -2,14 +2,13 @@ import { StatusBar } from 'expo-status-bar';
 import { use, useState } from 'react';
 import { Button, FlatList, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import InputTodo from './components/todo/input.todo';
-import ListTodo from './components/todo/list.todo';
 
 
 
 
 export default function App() {
 
-  const [todoList, setTodoList] = useState<ITodo[]>([
+  const [todoList, setTodoList] = useState([
     {id: 1, title: "learn React Native"},
     {id: 2, title: "learn React.js"},
     {id: 3, title: "learn JAva"},
@@ -28,7 +27,26 @@ export default function App() {
     <View style={styles.container}>
       
       <InputTodo />
-      <ListTodo todoList={todoList}/>
+      
+      {/* <ScrollView style={{
+        marginTop: 20,
+        borderColor: "red",
+        borderWidth: 1,
+        }}>
+        {todoList.map(todo => {
+          return (
+            <Text key={todo.id} 
+            style={styles.todo}
+            >
+              {todo.title}
+            </Text>
+          )
+        })}
+      </ScrollView> */}
+
+      
+
+      
     </View>
   );
 }
@@ -57,5 +75,10 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     padding: 10
   },
- 
+  todo: {
+    fontSize: 30,
+    backgroundColor: "pink",
+    marginBottom: 20,
+    padding: 15
+  }
 });

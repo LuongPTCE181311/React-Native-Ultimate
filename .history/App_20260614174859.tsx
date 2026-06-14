@@ -2,7 +2,6 @@ import { StatusBar } from 'expo-status-bar';
 import { use, useState } from 'react';
 import { Button, FlatList, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import InputTodo from './components/todo/input.todo';
-import ListTodo from './components/todo/list.todo';
 
 
 
@@ -28,7 +27,26 @@ export default function App() {
     <View style={styles.container}>
       
       <InputTodo />
-      <ListTodo todoList={todoList}/>
+      
+      {/* <ScrollView style={{
+        marginTop: 20,
+        borderColor: "red",
+        borderWidth: 1,
+        }}>
+        {todoList.map(todo => {
+          return (
+            <Text key={todo.id} 
+            style={styles.todo}
+            >
+              {todo.title}
+            </Text>
+          )
+        })}
+      </ScrollView> */}
+
+      
+
+      
     </View>
   );
 }
