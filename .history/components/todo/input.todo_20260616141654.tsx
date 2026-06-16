@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Alert, Button, StyleSheet, Text, TextInput, View } from "react-native";
+import { Button, StyleSheet, Text, TextInput, View } from "react-native";
 
 const styles = StyleSheet.create({
     todoInput: {
@@ -20,21 +20,6 @@ const InputTodo = (props: IProps) => {
     const [name, setName] = useState<string>("");
 
     const handleAddNewTodo = () => {
-        if(!name){
-            Alert.alert(
-                "invalid information",
-                 "title nothing",
-                [
-                    {
-                    text: 'Cancel',
-                    onPress: () => console.log('Cancel Pressed'),
-                        style: 'cancel',
-                    },
-                    {text: 'OK', onPress: () => console.log('OK Pressed')},
-                ]
-                )
-            return;
-        }
         addTodo(name);
         setName("");
     }
@@ -51,7 +36,7 @@ const InputTodo = (props: IProps) => {
                 style={styles.todoInput}/>
 
             <Button title='Add new'
-              color={"blue"}
+              color={"green"}
               onPress={handleAddNewTodo}
               />
             </View>

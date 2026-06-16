@@ -25,7 +25,7 @@ export default function App() {
     setTodoList(newToDo);
   }
   return (
-    <TouchableWithoutFeedback onPress={() => Keyboard.dismiss}>
+    <TouchableWithoutFeedback onPress={() => Keyboard.}>
       <View style={styles.container}>
         
         <InputTodo addTodo={addTodo}/>

@@ -51,7 +51,7 @@ const InputTodo = (props: IProps) => {
                 style={styles.todoInput}/>
 
             <Button title='Add new'
-              color={"blue"}
+              color={"green"}
               onPress={handleAddNewTodo}
               />
             </View>

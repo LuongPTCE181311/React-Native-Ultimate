@@ -28,9 +28,9 @@ const InputTodo = (props: IProps) => {
                     {
                     text: 'Cancel',
                     onPress: () => console.log('Cancel Pressed'),
-                        style: 'cancel',
-                    },
-                    {text: 'OK', onPress: () => console.log('OK Pressed')},
+                    style: 'cancel',
+                },
+                {text: 'OK', onPress: () => console.log('OK Pressed')},
                 ]
                 )
             return;
@@ -51,7 +51,7 @@ const InputTodo = (props: IProps) => {
                 style={styles.todoInput}/>
 
             <Button title='Add new'
-              color={"blue"}
+              color={"green"}
               onPress={handleAddNewTodo}
               />
             </View>

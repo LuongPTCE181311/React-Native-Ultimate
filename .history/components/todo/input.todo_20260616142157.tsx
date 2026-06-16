@@ -22,17 +22,7 @@ const InputTodo = (props: IProps) => {
     const handleAddNewTodo = () => {
         if(!name){
             Alert.alert(
-                "invalid information",
-                 "title nothing",
-                [
-                    {
-                    text: 'Cancel',
-                    onPress: () => console.log('Cancel Pressed'),
-                        style: 'cancel',
-                    },
-                    {text: 'OK', onPress: () => console.log('OK Pressed')},
-                ]
-                )
+                "invalid information", "title nothing")
             return;
         }
         addTodo(name);
@@ -51,7 +41,7 @@ const InputTodo = (props: IProps) => {
                 style={styles.todoInput}/>
 
             <Button title='Add new'
-              color={"blue"}
+              color={"green"}
               onPress={handleAddNewTodo}
               />
             </View>
