@@ -22,7 +22,7 @@ export default function App() {
     setTodoList(newToDo);
   }
   return (
-    <Flexbox />
+    <Flexbox
     // <TouchableWithoutFeedback onPress={() => Keyboard.dismiss}>
     //   <View style={styles.container}>
         

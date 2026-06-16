@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
 
 interface IProps {
     title: string;
-    onPress: () => void;
+    onPress: any;
 }
 
 const MineButton = (props: IProps) => {
@@ -30,9 +30,7 @@ const MineButton = (props: IProps) => {
     return (
         <Pressable
             style={({ pressed }) => ({ 
-                opacity: pressed === true ? 0.5 : 1,
-                alignSelf: "flex-start",
-            })} 
+                opacity: pressed === true ? 0.5 : 1})} 
             onPress={onPress}
         >
             <View style={styles.btnCntainer}>

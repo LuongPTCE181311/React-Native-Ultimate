@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
 
 interface IProps {
     title: string;
-    onPress: () => void;
+    onPress: ();
 }
 
 const MineButton = (props: IProps) => {
