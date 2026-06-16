@@ -21,14 +21,13 @@ export default function App() {
   }
 
   const deleteTodo = (id: number) => {
-    const newToDo = todoList.filter(todo => todo.id != id)
-    setTodoList(newToDo);
-  }
+    const newToDo = todoList.fi
+
   return (
     <View style={styles.container}>
       
       <InputTodo addTodo={addTodo}/>
-      <ListTodo todoList={todoList} deleteTodo={deleteTodo}/>
+      <ListTodo todoList={todoList}/>
     </View>
   );
 }

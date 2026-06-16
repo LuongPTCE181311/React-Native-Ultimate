@@ -10,12 +10,11 @@ const styles = StyleSheet.create({
 })
 
 interface Iprops {
-    todoList: ITodo[],
-    deleteTodo: (v: number) => void;
+    todoList: ITodo[]
 }
 
 const ListTodo = (props: Iprops) => {
-    const {todoList, deleteTodo} = props;
+    const {todoList} = props;
     return (
         <>
         <FlatList
@@ -28,14 +27,13 @@ const ListTodo = (props: Iprops) => {
                 keyExtractor={item => item.id + ""}
                 renderItem={({item}) => {
                   return (
-                    <TouchableOpacity
-                      onPress={() => deleteTodo(item.id)}
-                    >
+                    <TouchableOpacity>
                       <Text key={item.id} 
-                        style={styles.todo}
-                        >
-                          {item.title}
-                      </Text>
+                      style={styles.todo}
+                      onPress={() => alert(item.id)}
+                      >
+                        {item.title}
+                    </Text>
                     </TouchableOpacity>
                   )
                 }}

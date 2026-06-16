@@ -29,7 +29,7 @@ const ListTodo = (props: Iprops) => {
                 renderItem={({item}) => {
                   return (
                     <TouchableOpacity
-                      onPress={() => deleteTodo(item.id)}
+                      onPress={() => delete(item.id)}
                     >
                       <Text key={item.id} 
                         style={styles.todo}

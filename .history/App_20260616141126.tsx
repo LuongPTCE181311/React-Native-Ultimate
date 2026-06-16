@@ -28,7 +28,7 @@ export default function App() {
     <View style={styles.container}>
       
       <InputTodo addTodo={addTodo}/>
-      <ListTodo todoList={todoList} deleteTodo={deleteTodo}/>
+      <ListTodo todoList={todoList} deleteTodo={}/>
     </View>
   );
 }
