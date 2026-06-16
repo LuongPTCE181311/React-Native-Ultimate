@@ -31,9 +31,7 @@ const ListTodo = (props: Iprops) => {
                     <TouchableOpacity
                       onPress={() => deleteTodo(item.id)}
                     >
-                      <Text key={item.id} 
-                        style={styles.todo}
-                        >
+                      <Text style={styles.todo}>
                           {item.title}
                       </Text>
                     </TouchableOpacity>
