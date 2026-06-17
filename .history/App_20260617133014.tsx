@@ -27,7 +27,7 @@ function HomeScreen(props: any) {
         <Button 
           title='Go user id = 2'
           onPress={() => navigation.navigate("Details", {
-            userId: 2, name: "Kenldur"
+            userId: 1, name: "Kenldur"
           })}
         />
       </View>
@@ -35,7 +35,7 @@ function HomeScreen(props: any) {
   );
 }
 
-function DetailsScreen() {
+function DetailsScreen(props: any) {
   const route: any = useRoute();
   const navigation: any = useNavigation();
   return (

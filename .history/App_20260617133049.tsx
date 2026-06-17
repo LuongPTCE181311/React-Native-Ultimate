@@ -35,7 +35,7 @@ function HomeScreen(props: any) {
   );
 }
 
-function DetailsScreen() {
+function DetailsScreen(props: any) {
   const route: any = useRoute();
   const navigation: any = useNavigation();
   return (
